@@ -53,3 +53,11 @@ let cart : object
 cart = {
   key: 'yellow'
 }
+
+
+//type interference
+//o typescript sabe que aquilo é uma string, e se voce tentar o reestipular, com algo além de string, não conseguirá
+let message2 = 'mensagem indefinida'
+message2 =  'string' 
+
+//assim como, ao dizer que algo é string, nao se pode usar metoodos e propriedades fora de string
